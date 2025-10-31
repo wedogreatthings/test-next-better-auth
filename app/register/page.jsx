@@ -24,6 +24,7 @@ export default function RegisterPage() {
 
       router.push("/dashboard");
     } catch (err) {
+      console.log(err);
       setError(err.message || "Erreur lors de l'inscription");
     }
   };
